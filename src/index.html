@@ -3,36 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Grid</title>
 
     <!-- Tailwind -->
     <link rel="stylesheet" href="./output.css">
 </head>
 <body class="bg-gray-300">
-    <!-- Flexbox -->
-    <div class="flex justify-center items-center space-x-4 bg-gray-500 text-center h-36">
-        <div class="w-24 h-24 bg-blue-600">
-            1
-        </div>
-        <div class="w-24 h-24 bg-blue-600">
-            2
-        </div>
-        <div class="w-24 h-24 bg-blue-600">
-            3
-        </div>
-    </div>
-    <br>
+    <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="bg-green-600 p-4 col-span-2">1</div>
+        <div class="bg-green-600 p-4">2</div>
+        <div class="bg-green-600 p-4">3</div>
 
-    <div class="flex justify-center items-center space-x-4 bg-gray-500 text-center h-36">
-        <div class="w-24 h-24 bg-green-600">
-            1
-        </div>
-        <div class="flex-grow flex-shrink-0 w-24 h-24 bg-green-600">
-            2
-        </div>
-        <div class="w-24 h-24 bg-green-600">
-            3
-        </div>
+        <div class="bg-green-600 p-4">1</div>
+        <div class="bg-green-600 p-4">2</div>
+        <div class="bg-green-600 p-4">3</div>
+
+        <div class="bg-green-600 p-4">1</div>
+        <div class="bg-green-600 p-4">2</div>
+        <div class="bg-green-600 p-4">3</div>
     </div>
 </body>
 </html>

@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsividade</title>
+    <title>Estados</title>
 
     <!-- Tailwind -->
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-gray-300 sm:bg-red-600">
-    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">Hello Tailwind CSS</h1>
+<body class="bg-slate-400">
+    <h1 class="text-red-600 hover:text-blue-600 cursor-pointer hover:underline">Hello Tailwind</h1>
+
+    <div class="group w-72 bg-green-400 p-4 rounded-md">
+        <h4 class="font-bold group-hover:text-blue-800">Título do card</h4>
+        <p class="text-gray-800 group-hover:text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea temporibus animi nesciunt </p>
+    </div>
+
+    <input type="text" class="bg-gray-200 text-lg px-4 py-2 focus:text-red-600 rounded-sm hover:bg-gray-400" id="">
 </body>
 </html>

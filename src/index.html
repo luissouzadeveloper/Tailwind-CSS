@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes personalizadas</title>
+    <title>Card</title>
 
     <!-- Tailwind -->
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-gay-100 dark:bg-gray-800">
-    <h1 class="text-gray-700 dark:text-gray-300 text-xl hover:text-blue-600 cursor-pointer hover:underline">Hello Tailwind</h1>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <h6 class="font-bold mb-2 dark:bg-gray-50">Componente Card</h6>
 
-    <div class="group w-72 bg-brand-300 p-4 rounded-md">
-        <h4 class="font-bold group-hover:text-blue-800">Título do card</h4>
-        <p class="text-gray-800 group-hover:text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea temporibus animi nesciunt </p>
+        <div class="bg-white dark:bg-gray-600 rounded-lg shadow-lg">
+            <div class="w-full bg-gray-100 p-4 border-b border-gray-200 rounded-t">
+                <h4 class="font-bold">Topo</h4>
+            </div>
+            <div class="p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at, dolorem explicabo amet dolores ex velit, repudiandae magni aperiam ipsam perferendis optio cupiditate expedita officia ut repellat distinctio accusantium quae.
+            </div>
+            <div class="w-full bg-gray-50 border-t border-gray-200 rounded-b p-3">
+                Rodapé
+            </div>
+        </div>
     </div>
-
-    <input type="text" class="bg-brand-400 text-lg px-4 py-2 focus:text-red-600 rounded-sm hover:bg-gray-400 border border-brand-100 my-2" id="">
 </body>
 </html>

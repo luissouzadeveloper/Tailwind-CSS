@@ -4,15 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>input</title>
+    <title>dropdown</title>
 
     <!-- Tailwind -->
     <link rel="stylesheet" href="./output.css">
 </head>
 
 <body class="bg-gray-100">
-    <label class="my-3 text-gray-800 font-semibold text-lg">Nome:</label>
-    <input type="text" class="bg-gray-300 border border-gray-500 focus:border-blue-500 rounded-sm px-2 py-1 text-sm text-gray-600 placeholder-gray-800 focus:outline-none" placeholder="Digite seu nome">
+    <div>
+        <h6>Componente dropdown</h6>
+
+        <div class="relative">
+            <button
+                class="text-sm bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded text-white shadow-sm outline-4 outline-white flex items-center">
+                Botão
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+
+            </button>
+            <div class="absolute w-40 bg-gray-300 outline-4 outline-white py-1 shadow-md rounded-md">
+                <a href="#" class="block w-full text-gray-800 px-3 hover:bg-slate-400">Link 1</a>
+
+                <a href="#" class="block w-full text-gray-800 px-3 hover:bg-slate-400">Link 2</a>
+
+                <a href="#" class="block w-full text-gray-800 px-3 hover:bg-slate-400">Link 3</a>
+
+                <a href="#" class="block w-full text-gray-800 px-3 hover:bg-slate-400">Link 4</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
